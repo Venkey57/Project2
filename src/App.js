@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./ExcelEdit/"
+// import Usescall from "./callback/usescall";
+// import UseInsertiuonEffectsHooks from "./UseInsertion/UseInsertiuonEffectsHooks";
+// import Sample from "./timeCheck/Sample";
+import Sample from "./Debug/Sample"
+import ExcelEditor from "./ExcelEdit/ExcelEditor";
+// import Sample from './AutoBatching/Sample';
+// import UseTransitionHooks from "./transitionDeffered/useTransitionHooks"
+// import StartTrans from "./AutoBatching/StartTrans";
+// import StartTransClass from "./AutoBatching/StartTransClass";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div
+        style={{
+          textAlign: "center",
+        }}
+      >
+        <ExcelEditor />
+        {/* <Sample /> */}
+        {/* <StartTrans /> */}
+        {/* <StartTransClass/> */}
+        {/* <UseTransitionHooks/> */}
+      </div>
+      
+    </>
   );
 }
 
